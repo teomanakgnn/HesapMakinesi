@@ -4,9 +4,14 @@ public class Main {
     }
 
     public static void bolme(int x,int y) {
-            System.out.println( x/ y);  
+        try {
+            System.out.println( x /y);
+        } catch (ArithmeticException e) {
+            System.out.println("İşlem hatalı.");
+        }
     }
 
     public static void main(String[] args) {
+        //bolme(5,0); 
     }
-}    
+}      
